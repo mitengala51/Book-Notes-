@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkScribe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="container-2">
+            <hr>
+    <h1 id="heading">My Personal Bookshelf</h1>
+    <hr>
+    </div>
+
+    <div>
+    <p class="intro">Welcome to our Book Notes website, a haven for book enthusiasts 
+        seeking to deepen their literary journey. Here, you'll find 
+        meticulously curated summaries and detailed notes for a 
+        diverse array of books, offering invaluable insights into 
+        their themes, characters, and narratives. Whether you're a 
+        seasoned reader looking to revisit beloved classics or a 
+        newcomer eager to discover new literary treasures,</p> 
+        <p class="intro">our platform 
+        is designed to accompany you on every page-turning adventure. 
+        Stay tuned for regular updates as we continue to expand our collection, 
+        and let's embark on a journey of exploration and enlightenment through 
+        the world of books together.you can creates notes by clicking in <a href="/new" id="New-Notes">Create Notes</a></p>
+        <hr>
+        </div>
+
+        <div id="container-3">
+        <% notes.forEach( notes => { %>
+            <div id="container-4">
+            <img src="<%= notes.image%>" alt="book-cover">
+            <h1 class="title"><a><%= notes.title%></a></h1>
+            <h4><%= notes.date_t%></h4>
+            <p id="b_intro"><%= notes.books_intro%></p>
+            <h3>Review: (<%= notes.reviews%>/10)</h3>
+            <a class="e_d" id="edit" href="/posts/<%= notes.id %>">edit</a>
+            <a class="e_d" id="delete" href="/delete/<%= notes.id %>">delete</a>
+            <br><br><br><br><br><br>
+            </div>
+      <%  }); %>
+        </div>
+    </div>
+</body>
+</html>

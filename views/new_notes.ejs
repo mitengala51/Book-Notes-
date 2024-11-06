@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="/style/new_edit.css">
+</head>
+<body>
+    <div id="form_container">
+
+            <form id="newFormNotes" action="/posts" method="POST">
+
+                <label>Book Name</label><br>
+                <input type="text" name="b_name" placeholder="Name of the book" required><br>
+    
+                <label>Book Cover Image</label><br>
+                <input type="text" name="cover-page" placeholder="Enter ISBN number" required><br>
+    
+                <label>Opinion on Book</label><br>
+                <input type="text" name="books_intro" placeholder="Enter why/not everyone should read this book" required><br>
+    
+                <label>Reviews</label><br>
+                <input type="text" name="reviews" placeholder="1-10" required><br>
+    
+                <label>Notes</label><br>
+                <textarea type="text" name="notes" placeholder="Write your notes" required></textarea><br>
+
+                <button type="submit">Submit</button>
+    
+            </form>
+            
+            </div>
+
+    </div>
+</body>
+</html>

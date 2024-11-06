@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= book_notes.title %></title>
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+</head>
+<body>
+    <div id="container">
+        <img src="<%= notes.image%>" alt="book-cover">
+            <h1 class="title"><a><%= notes.title%></a></h1>
+            <h4><%= notes.date_t%></h4>
+            <h5><%= notes.books_intro%></h5>
+            <h3>(<%= notes.reviews%>/10)</h3>
+    </div>
+</body>
+</html>

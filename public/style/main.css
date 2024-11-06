@@ -1,0 +1,85 @@
+body{
+    background-color: #f7f9fc;
+    color: #101820;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0E46A3;
+}
+
+#container{
+    width: 800px;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 22px;
+}
+
+#heading{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    float: left;
+    margin-right: 30px;
+}
+
+#container-3{
+    margin: 20px;
+}
+
+#New-Notes{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: large;
+    text-decoration: none;
+    color: #0E46A3;
+}
+
+.e_d{
+    width: 40px;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 2px;
+}
+
+#edit{
+    background-color: #001EFF;
+    color: white;
+    text-decoration: none;
+}
+
+#delete{
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+}
+
+#b_intro{
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    font-style: normal; 
+}
+
